@@ -55,7 +55,16 @@ main {display:block;}
 }
 .hidden {position:absolute !important; left:-99999px !important;}
 
+#header {padding:15px 0; background-color:#fff;}
+.gnb {width:200px; margin:0 auto;}
+.gnb:after {display:block; content:''; clear:both;}
+.gnb li {float:left; width:100px; text-align:center;}
+
+#content {min-height:600px; background-color:#c1b8b8;}
+#work {width:70%; margin:0 auto;}
 .workList {margin-left:-20px;}
 .workList:after {display:block; content:''; clear:both;}
-.workList > li {float:left; width:33.333%;}
-.workList > li > a {display:block; margin-left:20px;}
+.workList > li {float:left; overflow:hidden; width:33.333%; height:200px;}
+.workList > li > a {display:block; margin-left:20px; height:100%;}
+/*.workList > li > a .boxTop {height:100%;}*/
+.workList > li > a img {width:100%; height:100%;}
