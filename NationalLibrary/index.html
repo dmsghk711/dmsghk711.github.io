@@ -1,1 +1,152 @@
-ddddddddddd
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <h1 class="logo">
+        <img src="http://placehold.it/149x35" alt="국립중앙도서관">
+      </h1>
+      <ul class="util">
+        <li>로그인</li>
+        <li>회원가입</li>
+        <li>내서재</li>
+        <li>바구니</li>
+        <li>사이트맵</li>
+        <li>ENGLISH</li>
+      </ul>
+      <ul class="socials">
+        <li><span class="hidden">네이버 블로그</span></li>
+        <li><span class="hidden">페이스북</span></li>
+        <li><span class="hidden">트위터</span></li>
+        <li><span class="hidden">유튜브</span></li>
+      </ul>
+      <div class="gnbWrap">
+        <ul class="gnb">
+          <li><a href="#">자료검색</a>
+            <ul>
+              <li><a href="#">소장자료</a></li>
+              <li><a href="#">정부간행물</a></li>
+              <li><a href="#">소장원문</a></li>
+              <li><a href="#">국가자료종합목록</a></li>
+              <li><a href="#">한국고전적종합목록</a></li>
+              <li><a href="#">해외수집기록물</a></li>
+              <li><a href="#">WEB DB</a></li>
+              <li><a href="#">연계자료</a></li>
+              <li><a href="#">신착자료</a></li>
+              <li><a href="#">사서추천도서</a></li>
+              <li><a href="#">영상자료주제별목록</a></li>
+              <li><a href="#">검색이용 안내</a></li>
+            </ul>
+          </li>
+          <li><a href="#">신청&middot;예약</a>
+            <ul>
+              <li><a href="#">디지털도서관 예약</a></li>
+              <li><a href="#">견학</a></li>
+              <li><a href="#">사회봉사</a></li>
+              <li><a href="#">이용자교육</a></li>
+              <li><a href="#">보존용&middot;정부(서고)자료 열람</a></li>
+              <li><a href="#">자료당일 열람</a></li>
+              <li><a href="#">비치희망도서</a></li>
+              <li><a href="#">자료복사</a></li>
+              <li><a href="#">책바다(국가상호대차)</a></li>
+              <li><a href="#">국제상호대차</a></li>
+              <li><a href="#">메일링서비스</a></li>
+              <li><a href="#">연계 API</a></li>
+              <li><a href="#">온라인교육</a></li>
+              <li><a href="#">예식장 대관</a></li>
+              <li><a href="#">정기주차권</a></li>
+            </ul>
+          </li>
+          <li><a href="#">소통&middot;참여</a>
+            <ul>
+              <li><a href="#">전시행사</a></li>
+              <li><a href="#">도서관 소식</a></li>
+              <li><a href="#">발간자료</a></li>
+              <li><a href="#">정보공개</a></li>
+              <li><a href="#">설문조사</a></li>
+              <li><a href="#">디지털도서관 체험후기</a></li>
+              <li><a href="#">자주하는 질문</a></li>
+              <li><a href="#">국민신문고</a></li>
+              <li><a href="#">클린신고센터</a></li>
+              <li><a href="#">오류신고</a></li>
+            </ul>
+          </li>
+          <li><a href="#">방문&middot;이용안내</a>
+            <ul>
+              <li><a href="#">국립중앙도서관</a>
+                <ul>
+                  <li><a href="#">본관 이용시간 및 절차</a></li>
+                  <li><a href="#">본관자료실</a></li>
+                  <li><a href="#">디지털도서관</a></li>
+                  <li><a href="#">편의시설</a></li>
+                </ul>
+              </li>
+              <li><a href="#">온라인 서비스 이용</a>
+                <ul>
+                  <li><a href="#">모바일서비스</a></li>
+                  <li><a href="#">정책정보서비스</a></li>
+                  <li><a href="#">디지털 컬렉션</a></li>
+                  <li><a href="#">뷰어프로그램</a></li>
+                  <li><a href="#">사이버머니</a></li>
+                  <li><a href="#">관내사이트</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">도서관소개</a>
+            <ul>
+              <li><a href="#">인사말</a></li>
+              <li><a href="#">연혁</a></li>
+              <li><a href="#">조직&middot;기구</a></li>
+              <li><a href="#">로고&middot;도서관체</a></li>
+              <li><a href="#">도서관 사진</a></li>
+              <li><a href="#">시설&middot;자료현황</a></li>
+              <li><a href="#">도서관 업무</a></li>
+              <li><a href="#">도서관 협력망</a></li>
+              <li><a href="#">찾아오시는 길</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><span class="hidden">주요서비스</span></a></li>
+        </ul>
+      </div>
+      <div class="mainVisual">
+        <div class="searchBox">
+          <span>소장자료 | 학술지</span>
+          <div class="searchKindBox">
+            <a href="#">저자별 검색</a>
+            <a href="#">주제별 검색</a>
+            <a href="#">상세검색</a>
+          </div>
+          <fieldset class="search">
+            <legend>통합검색</legend>
+            <label for="searchType" class="hidden">검색종류 선택</label>
+            <select type="text" id="searchType" name="searchType">
+              <option>제목 or 저자</option>
+            </select>
+            <label for="searchText" class="hidden">검색어 입력</label>
+            <input type="text" id="searchText" name="searchText" placeholder="검색어를 입력하세요.">
+            <button type="submit" class="btnSearchGo"><span class="hidden">검색</span></button>
+          </fieldset>
+          <div class="searchHelp">
+            <a href="#">검색도움말</a>
+            <a href="#">다국어입력기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="content">
+      
+      
+    </div>
+    <div id="footer">
+      
+      
+    </div>
+  </div>
+</body>
+</html>
